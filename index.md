@@ -70,7 +70,7 @@ SCEditor should work in at *least*: IE 6+, FF 3.5, Chrome, Opera 9.5+ &amp; Safa
 ## Support
 If you find any bugs or have any questions you can contact me via
 [my website](http://www.samclarke.com/contact),
-via [GitHub](hhttps://github.com/samclarke/SCEditor/issues/)
+via [GitHub](https://github.com/samclarke/SCEditor/issues/)
 or by [leaving a comment](http://www.samclarke.com/2011/07/sceditor/).
 
 
