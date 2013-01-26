@@ -2,7 +2,7 @@ permalink: /posts/:title
 pygments: true
 markdown: rdiscount
 
-domain: sceditor.samclarke.com
+domain: sceditor.com
 title: SCEditor
 author: Sam Clarke
 email: sam@samclarke.com
