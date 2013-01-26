@@ -8,7 +8,7 @@ categories:
 ---
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
 <link id="default" rel="stylesheet" href="/minified/themes/default.min.css" type="text/css" media="all" />
-<script type="text/javascript" src="/minified/jquery.sceditor.min.js"> </script>
+<script type="text/javascript" src="/minified/jquery.sceditor.bbcode.min.js"> </script>
 <script>
 	// Source: http://www.backalleycoder.com/2011/03/20/link-tag-css-stylesheet-load-event/
 	var loadCSS = function(url, callback){
@@ -22,7 +22,8 @@ categories:
 	
 		var img = document.createElement('img');
 		img.onerror = function(){
-			if(callback) callback(link);
+			if(callback)
+				setTimeout(function() { callback(link); }, 250);
 		}
 		img.src = url;
 	}

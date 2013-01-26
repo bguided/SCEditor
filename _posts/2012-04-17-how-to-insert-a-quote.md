@@ -12,7 +12,7 @@ categories:
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
 <link rel="stylesheet" href="/minified/themes/default.min.css" type="text/css" media="all" />
-<script type="text/javascript" src="/minified/jquery.sceditor.min.js"> </script>
+<script type="text/javascript" src="/minified/jquery.sceditor.bbcode.min.js"> </script>
 <script>$(document).ready(function() {
 	$("#demo-quote").sceditor({
 		plugins: 'bbcode',
@@ -63,14 +63,14 @@ categories:
 
 function insertQuote(includeAuthor)
 {
-	var editor = $("#demo-quote").data("sceditor");
-	var html = "This is an <b>example</b> quote.";
-	var author = null;
+	// first get the editor's instance
+	var editor = $("#demo-quote").sceditor("instance");
 
+	// execute the insert command
 	if(includeAuthor)
-		author = "author";
-
-	editor.commands.quote.exec.call(editor, null, html, author);
+		editor.insert('[quote=author]This is an [b]example[/b] quote.[/quote]');
+	else
+		editor.insert('[quote]This is an [b]example[/b] quote.[/quote]');
 }
 
 </script>
@@ -80,24 +80,14 @@ function insertQuote(includeAuthor)
 
 ## Code behind it
 
-To insert a quote, simpley call the quote command from the SCEditor instance you want to insert the quote in.
+To insert a quote, just pass the quotes BBCode to the `insert()` command.
 e.g.:
 
 {% highlight javascript %}
 // first get the editor's instance
-var editor = $("#demo-quote").data("sceditor");
+var editor = $("#demo-quote").sceditor("instance");
 
-// create html and author vars
-var html = "This is an <b>example</b> quote.";
-var author = "author"; // set to null for no author
-
-// execute the quote command
-editor.commands.quote.exec.call(editor, null, html, author);
+// execute the insert command
+editor.insert('[quote=author]This is an [b]example[/b] quote.[/quote]');
 {% endhighlight %}
-
-<p><strong>instance.commands.quote.exec.call(editor, caller, html, author);</strong><br />
-<strong>editor</strong><br />Should be the instance of SCEditor.<br />
-<strong>caller</strong><br />This should be null as the quote command dose not use it.<br />
-<strong>html</strong><br />The content to quote<br />
-<strong>author</strong><br />The author. Set to null for no author.</p>
 

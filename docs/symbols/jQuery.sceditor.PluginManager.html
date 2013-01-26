@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
-		<title>jQuery.sceditor.BBCodeParser | SCEditor</title>
+		<title>jQuery.sceditor.PluginManager | SCEditor</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<meta name="mobileoptimized" content="0" />
@@ -86,12 +86,12 @@
 			<header>
 				<h1 class="classTitle">
 					
-					Class <span>jQuery.sceditor.BBCodeParser</span>
+					Class <span>jQuery.sceditor.PluginManager</span>
 				</h1>
 				
 				<div class="intro">
 					<p class="description summary">
-						BBCodeParser
+						PluginManager
 					</p>
 						
 					
@@ -99,7 +99,7 @@
 							
 							
 							
-								<li>Defined in: <a href="../symbols/src/src_plugins_bbcode.js.html">bbcode.js</a></li>
+								<li>Defined in: <a href="../symbols/src/src_jquery.sceditor.js.html">jquery.sceditor.js</a></li>
 							
 							
 						</ul>
@@ -110,7 +110,7 @@
 			
 				<section>
 					<div class="props">
-						<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class jQuery.sceditor.BBCodeParser.">
+						<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class jQuery.sceditor.PluginManager.">
 							<caption class="sectionTitle">Class Summary</caption>
 							<thead>
 								<tr>
@@ -123,9 +123,9 @@
 									<td class="attributes">&nbsp;</td>
 									<td class="nameDescription" >
 										<div class="fixedFont">
-											<b><a href="../symbols/jQuery.sceditor.BBCodeParser.html#constructor">jQuery.sceditor.BBCodeParser</a></b>(options)
+											<b><a href="../symbols/jQuery.sceditor.PluginManager.html#constructor">jQuery.sceditor.PluginManager</a></b>()
 										</div>
-										<div class="description">SCEditor BBCode parser class</div>
+										<div class="description">Plugin Manager class</div>
 									</td>
 								</tr>
 							</tbody>
@@ -147,7 +147,7 @@
 						
 						
 							<nav>
-								<table class="summaryTable" id="MethodsList" cellspacing="0" summary="A summary of the methods documented in the class jQuery.sceditor.BBCodeParser.">
+								<table class="summaryTable" id="MethodsList" cellspacing="0" summary="A summary of the methods documented in the class jQuery.sceditor.PluginManager.">
 									<thead>
 										<tr>
 											<th scope="col">Method Attributes</th>
@@ -163,9 +163,9 @@
 											>
 												<td class="attributes">&nbsp;</td>
 												<td class="nameDescription">
-													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.BBCodeParser.html#base.parse">base.parse</a></b>(str, preserveNewLines)
+													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.PluginManager.html#call">call</a></b>(signal, args)
 													</div>
-													<div class="description">Parses a string into an array of BBCodes</div>
+													<div class="description">Calls all handlers for the passed signal</div>
 												</td>
 											</tr>
 										
@@ -174,9 +174,9 @@
 											>
 												<td class="attributes">&nbsp;</td>
 												<td class="nameDescription">
-													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.BBCodeParser.html#base.toBBCode">base.toBBCode</a></b>(str, preserveNewLines)
+													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.PluginManager.html#callOnlyFirst">callOnlyFirst</a></b>(signal, args)
 													</div>
-													<div class="description">Takes a BBCode string, parses it then converts it back to BBCode.</div>
+													<div class="description">Calls the first handler for a signal, and returns the result</div>
 												</td>
 											</tr>
 										
@@ -185,9 +185,9 @@
 											>
 												<td class="attributes">&nbsp;</td>
 												<td class="nameDescription">
-													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.BBCodeParser.html#base.toHTML">base.toHTML</a></b>(str, preserveNewLines)
+													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.PluginManager.html#deregister">deregister</a></b>(plugin)
 													</div>
-													<div class="description">Converts a BBCode string to HTML</div>
+													<div class="description">Deregisters a plugin.</div>
 												</td>
 											</tr>
 										
@@ -196,9 +196,64 @@
 											>
 												<td class="attributes">&nbsp;</td>
 												<td class="nameDescription">
-													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.BBCodeParser.html#base.tokenize">base.tokenize</a></b>(str)
+													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.PluginManager.html#destroy">destroy</a></b>()
 													</div>
-													<div class="description">Takes a BBCode string and splits it into open, content and close tags.</div>
+													<div class="description"><p>Clears all plugins and removes the owner refrence.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item4'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.PluginManager.html#exsists">exsists</a></b>(plugin)
+													</div>
+													<div class="description">Checks if the plugin exists in jQuery.sceditor.plugins</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item5'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.PluginManager.html#hasHandler">hasHandler</a></b>(signal)
+													</div>
+													<div class="description">Checks if a signal has a handler</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item6'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.PluginManager.html#isRegistered">isRegistered</a></b>(plugin)
+													</div>
+													<div class="description">Checks if the passed plugin is currrently registered.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item7'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.PluginManager.html#iter">iter</a></b>(signal)
+													</div>
+													<div class="description"><p>Returns an object which has callNext and hasNext methods.</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item8'
+											>
+												<td class="attributes">&nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont"><b><a href="../symbols/jQuery.sceditor.PluginManager.html#register">register</a></b>(plugin)
+													</div>
+													<div class="description">Registers a plugin to receive signals</div>
 												</td>
 											</tr>
 										
@@ -228,46 +283,18 @@
 							</h2>
 							
 							<div class="fixedFont">
-								<b>jQuery.sceditor.BBCodeParser</b>(options)
+								<b>jQuery.sceditor.PluginManager</b>()
 							</div>
 							
 							<div class="description">
-								SCEditor BBCode parser class
+								Plugin Manager class
 								
 							</div>
 							
 							
 						
 							
-								<dl class="detailList params">
-									<dt class="heading">Parameters:</dt>
-									
-										<dt>
-											<span class="light fixedFont">{Object}</span>  <b>options</b>
-											
-										</dt>
-										<dd></dd>
-									
-								</dl>
 							
-							
-							
-								<dl class="detailList nomargin">
-									
-									
-									
-										<dt class="heading">Since:</dt>
-										<dd>v1.4.0</dd>
-									
-									
-									
-									
-									
-									
-									
-									
-									
-								</dl>
 							
 						</div>
 					</div>
@@ -294,18 +321,18 @@
 									<li 
 										 class='item0'
 									>
-										<div class="fixedFont heading" id="base.parse">
+										<div class="fixedFont heading" id="call">
 											<span class='lighter'>
 											
 											</span>
 											
-											<span class="light">{Array}</span>
+											<span class="light">{Void}</span>
 											
-											<b>base.parse</b>(str, preserveNewLines)
+											<b>call</b>(signal, args)
 										</div>
 										
 										<div class="description">
-											Parses a string into an array of BBCodes
+											Calls all handlers for the passed signal
 											
 											
 											
@@ -319,16 +346,16 @@
 												<dt class="heading">Parameters:</dt>
 												
 													<dt>
-														<span class="light fixedFont">{String}</span> <b>str</b>
+														<span class="light fixedFont">{String}</span> <b>signal</b>
 														
 													</dt>
 													<dd></dd>
 												
 													<dt>
-														<span class="light fixedFont">{Bool}</span> <b>preserveNewLines</b>
+														<span class="light fixedFont">{...String}</span> <b>args</b>
 														
 													</dt>
-													<dd>If to preserve all new lines, not strip any based on the passed formatting options</dd>
+													<dd></dd>
 												
 											</dl>
 										
@@ -345,7 +372,7 @@
 												
 													<dt class="heading">Returns:</dt>
 													
-														<dd><span class="light fixedFont">{Array}</span> Array of BBCode objects</dd>
+														<dd><span class="light fixedFont">{Void}</span> </dd>
 													
 												
 												
@@ -361,20 +388,18 @@
 									<li 
 										 class='item1'
 									>
-										<div class="fixedFont heading" id="base.toBBCode">
+										<div class="fixedFont heading" id="callOnlyFirst">
 											<span class='lighter'>
 											
 											</span>
 											
-											<span class="light">{String}</span>
+											<span class="light">{Mixed}</span>
 											
-											<b>base.toBBCode</b>(str, preserveNewLines)
+											<b>callOnlyFirst</b>(signal, args)
 										</div>
 										
 										<div class="description">
-											Takes a BBCode string, parses it then converts it back to BBCode.
-
-This will auto fix the BBCode and format it with the specified options.
+											Calls the first handler for a signal, and returns the result
 											
 											
 											
@@ -388,16 +413,16 @@ This will auto fix the BBCode and format it with the specified options.
 												<dt class="heading">Parameters:</dt>
 												
 													<dt>
-														<span class="light fixedFont">{String}</span> <b>str</b>
+														<span class="light fixedFont">{String}</span> <b>signal</b>
 														
 													</dt>
 													<dd></dd>
 												
 													<dt>
-														<span class="light fixedFont">{Bool}</span> <b>preserveNewLines</b>
+														<span class="light fixedFont">{...String}</span> <b>args</b>
 														
 													</dt>
-													<dd>If to preserve all new lines, not strip any based on the passed formatting options</dd>
+													<dd></dd>
 												
 											</dl>
 										
@@ -414,7 +439,7 @@ This will auto fix the BBCode and format it with the specified options.
 												
 													<dt class="heading">Returns:</dt>
 													
-														<dd><span class="light fixedFont">{String}</span> </dd>
+														<dd><span class="light fixedFont">{Mixed}</span> The result of calling the handler</dd>
 													
 												
 												
@@ -430,18 +455,18 @@ This will auto fix the BBCode and format it with the specified options.
 									<li 
 										 class='item2'
 									>
-										<div class="fixedFont heading" id="base.toHTML">
+										<div class="fixedFont heading" id="deregister">
 											<span class='lighter'>
 											
 											</span>
 											
-											<span class="light">{String}</span>
+											<span class="light">{Boolean}</span>
 											
-											<b>base.toHTML</b>(str, preserveNewLines)
+											<b>deregister</b>(plugin)
 										</div>
 										
 										<div class="description">
-											Converts a BBCode string to HTML
+											Deregisters a plugin.
 											
 											
 											
@@ -455,16 +480,10 @@ This will auto fix the BBCode and format it with the specified options.
 												<dt class="heading">Parameters:</dt>
 												
 													<dt>
-														<span class="light fixedFont">{String}</span> <b>str</b>
+														<span class="light fixedFont">{String}</span> <b>plugin</b>
 														
 													</dt>
 													<dd></dd>
-												
-													<dt>
-														<span class="light fixedFont">{Bool}</span> <b>preserveNewLines</b>
-														
-													</dt>
-													<dd>If to preserve all new lines, not strip any based on the passed formatting options</dd>
 												
 											</dl>
 										
@@ -481,7 +500,7 @@ This will auto fix the BBCode and format it with the specified options.
 												
 													<dt class="heading">Returns:</dt>
 													
-														<dd><span class="light fixedFont">{String}</span> </dd>
+														<dd><span class="light fixedFont">{Boolean}</span> </dd>
 													
 												
 												
@@ -497,22 +516,70 @@ This will auto fix the BBCode and format it with the specified options.
 									<li 
 										 class='item3'
 									>
-										<div class="fixedFont heading" id="base.tokenize">
+										<div class="fixedFont heading" id="destroy">
 											<span class='lighter'>
 											
 											</span>
 											
-											<span class="light">{Array}</span>
+											<span class="light">{Void}</span>
 											
-											<b>base.tokenize</b>(str)
+											<b>destroy</b>()
 										</div>
 										
 										<div class="description">
-											Takes a BBCode string and splits it into open, content and close tags.
+											<p>Clears all plugins and removes the owner refrence.</p>
 
-It does no checking to verify a tag has a matching open or closing tag
-or if the tag is valid child of any tag before it. For that the tokens
-should be passed to the parse function.
+<p>Calling any functions on this object after calling destroy will cause a JS error.</p>
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Void}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item4'
+									>
+										<div class="fixedFont heading" id="exsists">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Boolean}</span>
+											
+											<b>exsists</b>(plugin)
+										</div>
+										
+										<div class="description">
+											Checks if the plugin exists in jQuery.sceditor.plugins
 											
 											
 											
@@ -526,7 +593,7 @@ should be passed to the parse function.
 												<dt class="heading">Parameters:</dt>
 												
 													<dt>
-														<span class="light fixedFont">{String}</span> <b>str</b>
+														<span class="light fixedFont">{String}</span> <b>plugin</b>
 														
 													</dt>
 													<dd></dd>
@@ -546,7 +613,256 @@ should be passed to the parse function.
 												
 													<dt class="heading">Returns:</dt>
 													
-														<dd><span class="light fixedFont">{Array}</span> </dd>
+														<dd><span class="light fixedFont">{Boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item5'
+									>
+										<div class="fixedFont heading" id="hasHandler">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Boolean}</span>
+											
+											<b>hasHandler</b>(signal)
+										</div>
+										
+										<div class="description">
+											Checks if a signal has a handler
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{String}</span> <b>signal</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item6'
+									>
+										<div class="fixedFont heading" id="isRegistered">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Boolean}</span>
+											
+											<b>isRegistered</b>(plugin)
+										</div>
+										
+										<div class="description">
+											Checks if the passed plugin is currrently registered.
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{String}</span> <b>plugin</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Boolean}</span> </dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item7'
+									>
+										<div class="fixedFont heading" id="iter">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Object}</span>
+											
+											<b>iter</b>(signal)
+										</div>
+										
+										<div class="description">
+											<p>Returns an object which has callNext and hasNext methods.</p>
+
+<p>callNext takes arguments to pass to the handler and returns the
+result of calling the handler</p>
+
+<p>hasNext checks if there is another handler</p>
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{String}</span> <b>signal</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Object}</span> Object with hasNext and callNext methods</dd>
+													
+												
+												
+												
+												
+												
+											
+											</dl>
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item8'
+									>
+										<div class="fixedFont heading" id="register">
+											<span class='lighter'>
+											
+											</span>
+											
+											<span class="light">{Boolean}</span>
+											
+											<b>register</b>(plugin)
+										</div>
+										
+										<div class="description">
+											Registers a plugin to receive signals
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{String}</span> <b>plugin</b>
+														
+													</dt>
+													<dd></dd>
+												
+											</dl>
+										
+										
+										
+											<dl class="detailList nomargin">
+											
+												
+												
+												
+												
+												
+												
+												
+													<dt class="heading">Returns:</dt>
+													
+														<dd><span class="light fixedFont">{Boolean}</span> </dd>
 													
 												
 												

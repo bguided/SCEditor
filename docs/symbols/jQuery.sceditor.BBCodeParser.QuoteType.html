@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
-		<title>jQuery.sceditor.command | SCEditor</title>
+		<title>jQuery.sceditor.BBCodeParser.QuoteType | SCEditor</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<meta name="mobileoptimized" content="0" />
@@ -86,12 +86,12 @@
 			<header>
 				<h1 class="classTitle">
 					
-					Class <span>jQuery.sceditor.command</span>
+					Class <span>jQuery.sceditor.BBCodeParser.QuoteType</span>
 				</h1>
 				
 				<div class="intro">
 					<p class="description summary">
-						command
+						QuoteType
 					</p>
 						
 					
@@ -99,7 +99,7 @@
 							
 							
 							
-								<li>Defined in: <a href="../symbols/src/src_jquery.sceditor.js.html">jquery.sceditor.js</a></li>
+								<li>Defined in: <a href="../symbols/src/src_plugins_bbcode.js.html">bbcode.js</a></li>
 							
 							
 						</ul>
@@ -110,7 +110,7 @@
 			
 				<section>
 					<div class="props">
-						<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class jQuery.sceditor.command.">
+						<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class jQuery.sceditor.BBCodeParser.QuoteType.">
 							<caption class="sectionTitle">Class Summary</caption>
 							<thead>
 								<tr>
@@ -123,9 +123,9 @@
 									<td class="attributes">&nbsp;</td>
 									<td class="nameDescription" >
 										<div class="fixedFont">
-											<b><a href="../symbols/jQuery.sceditor.command.html#constructor">jQuery.sceditor.command</a></b>()
+											<b><a href="../symbols/jQuery.sceditor.BBCodeParser.QuoteType.html#constructor">jQuery.sceditor.BBCodeParser.QuoteType</a></b>()
 										</div>
-										<div class="description">Static command helper class</div>
+										<div class="description">Quote type</div>
 									</td>
 								</tr>
 							</tbody>
@@ -135,71 +135,65 @@
 			
 			
 			
-	<!--
-	#### METHODS SUMMARY
-	-->
-			
+				
 				<section>
 					
-					
-					<div class="props">
-						<h2 class="sectionTitle">Method Summary</h2>
-						
-						
-							<nav>
-								<table class="summaryTable" id="MethodsList" cellspacing="0" summary="A summary of the methods documented in the class jQuery.sceditor.command.">
+						<nav>
+							<div class="props">
+								<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class jQuery.sceditor.BBCodeParser.QuoteType.">
+									<caption class="sectionTitle">Field Summary</caption>
+									
 									<thead>
 										<tr>
-											<th scope="col">Method Attributes</th>
-											<th scope="col">Method Name and Description</th>
+											<th scope="col">Field Attributes</th>
+											<th scope="col">Field Name and Description</th>
 										</tr>
 									</thead>
 									
 									<tbody>
 										
-										
-											<tr
-												 class='item0'
-											>
+											<tr>
 												<td class="attributes">&lt;static&gt; &nbsp;</td>
 												<td class="nameDescription">
-													<div class="fixedFont">jQuery.sceditor.command.<b><a href="../symbols/jQuery.sceditor.command.html#.get">get</a></b>(name)
+													<div class="fixedFont">
+													jQuery.sceditor.BBCodeParser.QuoteType.<b><a href="../symbols/jQuery.sceditor.BBCodeParser.QuoteType.html#.always">always</a></b>
 													</div>
-													<div class="description">Gets a command</div>
+													<div class="description">Always quote the attribute value</div>
 												</td>
 											</tr>
 										
-											<tr
-												 class='item1'
-											>
+											<tr>
 												<td class="attributes">&lt;static&gt; &nbsp;</td>
 												<td class="nameDescription">
-													<div class="fixedFont">jQuery.sceditor.command.<b><a href="../symbols/jQuery.sceditor.command.html#.remove">remove</a></b>(name)
+													<div class="fixedFont">
+													jQuery.sceditor.BBCodeParser.QuoteType.<b><a href="../symbols/jQuery.sceditor.BBCodeParser.QuoteType.html#.auto">auto</a></b>
 													</div>
-													<div class="description">Removes a command</div>
+													<div class="description">Only quote the attributes value when it contains spaces ot equals</div>
 												</td>
 											</tr>
 										
-											<tr
-												 class='item2'
-											>
+											<tr>
 												<td class="attributes">&lt;static&gt; &nbsp;</td>
 												<td class="nameDescription">
-													<div class="fixedFont">jQuery.sceditor.command.<b><a href="../symbols/jQuery.sceditor.command.html#.set">set</a></b>(name, cmd)
+													<div class="fixedFont">
+													jQuery.sceditor.BBCodeParser.QuoteType.<b><a href="../symbols/jQuery.sceditor.BBCodeParser.QuoteType.html#.never">never</a></b>
 													</div>
-													<div class="description"><p>Adds a command to the editor or updates an exisiting
-command if a command with the specified name already exists.</div>
+													<div class="description">Never quote the attributes value</div>
 												</td>
 											</tr>
 										
 									</tbody>
 								</table>
-							</nav>
-						
+							</div>
+						</nav>
 					
-						
-					</div>
+					
+					
 				</section>
+			
+	<!--
+	#### METHODS SUMMARY
+	-->
 			
 			
 	<!--
@@ -218,11 +212,11 @@ command if a command with the specified name already exists.</div>
 							</h2>
 							
 							<div class="fixedFont">
-								<b>jQuery.sceditor.command</b>()
+								<b>jQuery.sceditor.BBCodeParser.QuoteType</b>()
 							</div>
 							
 							<div class="description">
-								Static command helper class
+								Quote type
 								
 							</div>
 							
@@ -230,6 +224,23 @@ command if a command with the specified name already exists.</div>
 						
 							
 							
+							
+								<dl class="detailList nomargin">
+									
+									
+									
+										<dt class="heading">Since:</dt>
+										<dd>v1.4.0</dd>
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								</dl>
 							
 						</div>
 					</div>
@@ -239,236 +250,87 @@ command if a command with the specified name already exists.</div>
 	#### FIELD DETAILS
 	-->
 			
-	<!--
-	#### METHOD DETAILS
-	-->		
-			
 				<section>
 					<div class="details props">
 						<div class="innerProps">
 							<h2 class="sectionTitle">
-								Method Detail
+								Field Detail
 							</h2>
 							
-							<ul class="methodDetail" id="MethodDetail">
+							
+								<div class="fixedFont heading" id=".always">
+									<span class='lighter'>
+									&lt;static&gt; 
+									</span>
+									
+									
+									
+									<span class="light">jQuery.sceditor.BBCodeParser.QuoteType.</span><b>always</b>							
+								</div>
+								
+								<div class="description">
+									Always quote the attribute value
+									
+									
+									
+								</div>
 								
 								
-									<li 
-										 class='item0'
-									>
-										<div class="fixedFont heading" id=".get">
-											<span class='lighter'>
-											&lt;static&gt; 
-											</span>
-											
-											<span class="light">{Object|null}</span>
-											
-											<span class="light">jQuery.sceditor.command.</span><b>get</b>(name)
-										</div>
-										
-										<div class="description">
-											Gets a command
-											
-											
-											
-											
-										</div>
-										
-										
-										
-										
-											<dl class="detailList params">
-												<dt class="heading">Parameters:</dt>
-												
-													<dt>
-														<span class="light fixedFont">{String}</span> <b>name</b>
-														
-													</dt>
-													<dd></dd>
-												
-											</dl>
-										
-										
-										
-											<dl class="detailList nomargin">
-											
-												
-												
-												
-													<dt class="heading">Since:</dt>
-													<dd>v1.3.5</dd>
-												
-												
-												
-												
-												
-													<dt class="heading">Returns:</dt>
-													
-														<dd><span class="light fixedFont">{Object|null}</span> </dd>
-													
-												
-												
-												
-												
-												
-											
-											</dl>
-										
-										<div class="hr"></div>
-									</li>
+									
 								
-									<li 
-										 class='item1'
-									>
-										<div class="fixedFont heading" id=".remove">
-											<span class='lighter'>
-											&lt;static&gt; 
-											</span>
-											
-											<span class="light">{this}</span>
-											
-											<span class="light">jQuery.sceditor.command.</span><b>remove</b>(name)
-										</div>
-										
-										<div class="description">
-											Removes a command
-											
-											
-											
-											
-										</div>
-										
-										
-										
-										
-											<dl class="detailList params">
-												<dt class="heading">Parameters:</dt>
-												
-													<dt>
-														<span class="light fixedFont">{String}</span> <b>name</b>
-														
-													</dt>
-													<dd></dd>
-												
-											</dl>
-										
-										
-										
-											<dl class="detailList nomargin">
-											
-												
-												
-												
-													<dt class="heading">Since:</dt>
-													<dd>v1.3.5</dd>
-												
-												
-												
-												
-												
-													<dt class="heading">Returns:</dt>
-													
-														<dd><span class="light fixedFont">{this}</span> </dd>
-													
-												
-												
-												
-												
-												
-											
-											</dl>
-										
-										<div class="hr"></div>
-									</li>
+								<div class="hr"></div>
+							
+								<div class="fixedFont heading" id=".auto">
+									<span class='lighter'>
+									&lt;static&gt; 
+									</span>
+									
+									
+									
+									<span class="light">jQuery.sceditor.BBCodeParser.QuoteType.</span><b>auto</b>							
+								</div>
 								
-									<li 
-										 class='item2'
-									>
-										<div class="fixedFont heading" id=".set">
-											<span class='lighter'>
-											&lt;static&gt; 
-											</span>
-											
-											<span class="light">{this|false}</span>
-											
-											<span class="light">jQuery.sceditor.command.</span><b>set</b>(name, cmd)
-										</div>
-										
-										<div class="description">
-											<p>Adds a command to the editor or updates an exisiting
-command if a command with the specified name already exists.</p>
-
-<p>Once a command is add it can be included in the toolbar by
-adding it's name to the toolbar option in the constructor. It
-can also be executed manually by calling jQuery.sceditor.execCommand</p>
-											
-											
-											
-											
-										</div>
-										
-										
-											
-												<pre class="code">$.sceditor.command.set("hello",
-{
-    exec: function() {
-        alert("Hello World!");
-    }
-});</pre>
-											
-										
-										
-										
-											<dl class="detailList params">
-												<dt class="heading">Parameters:</dt>
-												
-													<dt>
-														<span class="light fixedFont">{String}</span> <b>name</b>
-														
-													</dt>
-													<dd></dd>
-												
-													<dt>
-														<span class="light fixedFont">{Object}</span> <b>cmd</b>
-														
-													</dt>
-													<dd></dd>
-												
-											</dl>
-										
-										
-										
-											<dl class="detailList nomargin">
-											
-												
-												
-												
-													<dt class="heading">Since:</dt>
-													<dd>v1.3.5</dd>
-												
-												
-												
-												
-												
-													<dt class="heading">Returns:</dt>
-													
-														<dd><span class="light fixedFont">{this|false}</span> Returns false if name or cmd is false</dd>
-													
-												
-												
-												
-												
-												
-											
-											</dl>
-										
-										
-									</li>
+								<div class="description">
+									Only quote the attributes value when it contains spaces ot equals
+									
+									
+									
+								</div>
 								
-							</ul>
+								
+									
+								
+								<div class="hr"></div>
+							
+								<div class="fixedFont heading" id=".never">
+									<span class='lighter'>
+									&lt;static&gt; 
+									</span>
+									
+									
+									
+									<span class="light">jQuery.sceditor.BBCodeParser.QuoteType.</span><b>never</b>							
+								</div>
+								
+								<div class="description">
+									Never quote the attributes value
+									
+									
+									
+								</div>
+								
+								
+									
+								
+								
+							
 						</div>
 					</div>
 				</section>
+			
+	<!--
+	#### METHOD DETAILS
+	-->		
 			
 			
 	<!--

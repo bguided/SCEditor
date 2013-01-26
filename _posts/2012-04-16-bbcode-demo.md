@@ -11,7 +11,7 @@ categories:
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
 <link rel="stylesheet" href="/minified/themes/default.min.css" type="text/css" media="all" />
-<script type="text/javascript" src="/minified/jquery.sceditor.min.js"> </script>
+<script type="text/javascript" src="/minified/jquery.sceditor.bbcode.min.js"> </script>
 <script>$(document).ready(function() {
 	$("#demo-bbcode").sceditor({
 		style: "/minified/jquery.sceditor.default.min.css",
@@ -68,7 +68,7 @@ Include the required JavaScript and CSS:
 {% highlight html %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <link rel="stylesheet" href="/minified/themes/default.min.css" type="text/css" media="all" />
-<script type="text/javascript" src="/minified/jquery.sceditor.min.js"></script>
+<script type="text/javascript" src="/minified/jquery.sceditor.bbcode.min.js"></script>
 {% endhighlight %}
 
 Then initialize the plugin on any textareas you want to convert:

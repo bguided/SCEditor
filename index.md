@@ -9,7 +9,7 @@ permalink: /
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script>
 <link rel="stylesheet" href="minified/themes/default.min.css" type="text/css" media="all" />
-<script type="text/javascript" src="minified/jquery.sceditor.min.js"> </script>
+<script type="text/javascript" src="minified/jquery.sceditor.bbcode.min.js"> </script>
 <script>$(document).ready(function() {
 	$("textarea").sceditor({
 		plugins: 'bbcode',
@@ -25,7 +25,7 @@ First include the JS and CSS files for jQuery and SCEditor:
 {% highlight html %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <link rel="stylesheet" href="minified/jquery.sceditor.min.css" type="text/css" media="all" />
-<script type="text/javascript" src="minified/jquery.sceditor.min.js"></script>
+<script type="text/javascript" src="minified/jquery.sceditor.bbcode.min.js"></script>
 {% endhighlight %}
 
 Then simply do:
@@ -68,10 +68,7 @@ SCEditor should work in at *least*: IE 6+, FF 3.5, Chrome, Opera 9.5+ &amp; Safa
 
 
 ## Support
-If you find any bugs or have any questions you can contact me via
-[my website](http://www.samclarke.com/contact),
-via [GitHub](hhttps://github.com/samclarke/SCEditor/issues/)
-or by [leaving a comment](http://www.samclarke.com/2011/07/sceditor/).
+If you find any bugs or have any questions you can post them on the [GitHub issue](hhttps://github.com/samclarke/SCEditor/issues/) page or by contacting me [here](http://www.samclarke.com/contact).
 
 
 ## Donate

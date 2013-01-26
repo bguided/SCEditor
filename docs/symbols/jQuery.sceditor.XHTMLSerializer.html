@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
-		<title>jQuery.sceditor.BBCodeParser#TokenizeToken | SCEditor</title>
+		<title>jQuery.sceditor.XHTMLSerializer | SCEditor</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<meta name="mobileoptimized" content="0" />
@@ -86,12 +86,12 @@
 			<header>
 				<h1 class="classTitle">
 					
-					Class <span>jQuery.sceditor.BBCodeParser#TokenizeToken</span>
+					Class <span>jQuery.sceditor.XHTMLSerializer</span>
 				</h1>
 				
 				<div class="intro">
 					<p class="description summary">
-						TokenizeToken
+						XHTMLSerializer
 					</p>
 						
 					
@@ -99,7 +99,7 @@
 							
 							
 							
-								<li>Defined in: <a href="../symbols/src/src_plugins_bbcode.js.html">bbcode.js</a></li>
+								<li>Defined in: <a href="../symbols/src/src_plugins_xhtml.js.html">xhtml.js</a></li>
 							
 							
 						</ul>
@@ -110,7 +110,7 @@
 			
 				<section>
 					<div class="props">
-						<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class jQuery.sceditor.BBCodeParser#TokenizeToken.">
+						<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class jQuery.sceditor.XHTMLSerializer.">
 							<caption class="sectionTitle">Class Summary</caption>
 							<thead>
 								<tr>
@@ -123,9 +123,9 @@
 									<td class="attributes">&nbsp;</td>
 									<td class="nameDescription" >
 										<div class="fixedFont">
-											<b><a href="../symbols/jQuery.sceditor.BBCodeParser%23TokenizeToken.html#constructor">jQuery.sceditor.BBCodeParser#TokenizeToken</a></b>(type, name, val, attrs, children, closing)
+											<b><a href="../symbols/jQuery.sceditor.XHTMLSerializer.html#constructor">jQuery.sceditor.XHTMLSerializer</a></b>()
 										</div>
-										<div class="description">Tokenize token class</div>
+										<div class="description">XHTMLSerializer part of the XHTML plugin.</div>
 									</td>
 								</tr>
 							</tbody>
@@ -135,59 +135,45 @@
 			
 			
 			
-	<!--
-	#### METHODS SUMMARY
-	-->
-			
+				
 				<section>
 					
-					
-					<div class="props">
-						<h2 class="sectionTitle">Method Summary</h2>
-						
-						
-							<nav>
-								<table class="summaryTable" id="MethodsList" cellspacing="0" summary="A summary of the methods documented in the class jQuery.sceditor.BBCodeParser#TokenizeToken.">
+						<nav>
+							<div class="props">
+								<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class jQuery.sceditor.XHTMLSerializer.">
+									<caption class="sectionTitle">Field Summary</caption>
+									
 									<thead>
 										<tr>
-											<th scope="col">Method Attributes</th>
-											<th scope="col">Method Name and Description</th>
+											<th scope="col">Field Attributes</th>
+											<th scope="col">Field Name and Description</th>
 										</tr>
 									</thead>
 									
 									<tbody>
 										
-										
-											<tr
-												 class='item0'
-											>
-												<td class="attributes">&lt;static&gt; &nbsp;</td>
+											<tr>
+												<td class="attributes">&nbsp;</td>
 												<td class="nameDescription">
-													<div class="fixedFont">jQuery.sceditor.BBCodeParser#TokenizeToken.<b><a href="../symbols/jQuery.sceditor.BBCodeParser%23TokenizeToken.html#.clone">clone</a></b>(includeChildren)
+													<div class="fixedFont">
+													<b><a href="../symbols/jQuery.sceditor.XHTMLSerializer.html#serialize">serialize</a></b>
 													</div>
-													<div class="description">Clones this token</div>
-												</td>
-											</tr>
-										
-											<tr
-												 class='item1'
-											>
-												<td class="attributes">&lt;static&gt; &nbsp;</td>
-												<td class="nameDescription">
-													<div class="fixedFont">jQuery.sceditor.BBCodeParser#TokenizeToken.<b><a href="../symbols/jQuery.sceditor.BBCodeParser%23TokenizeToken.html#.splitAt">splitAt</a></b>(splitAt)
-													</div>
-													<div class="description">Splits this token at the specified child</div>
+													<div class="description">Serializes a node to XHTML</div>
 												</td>
 											</tr>
 										
 									</tbody>
 								</table>
-							</nav>
-						
+							</div>
+						</nav>
 					
-						
-					</div>
+					
+					
 				</section>
+			
+	<!--
+	#### METHODS SUMMARY
+	-->
 			
 			
 	<!--
@@ -206,59 +192,35 @@
 							</h2>
 							
 							<div class="fixedFont">
-								<b>jQuery.sceditor.BBCodeParser#TokenizeToken</b>(type, name, val, attrs, children, closing)
+								<b>jQuery.sceditor.XHTMLSerializer</b>()
 							</div>
 							
 							<div class="description">
-								Tokenize token class
+								XHTMLSerializer part of the XHTML plugin.
 								
 							</div>
 							
 							
 						
 							
-								<dl class="detailList params">
-									<dt class="heading">Parameters:</dt>
+							
+							
+								<dl class="detailList nomargin">
 									
-										<dt>
-											<span class="light fixedFont">{String}</span>  <b>type</b>
-											
-										</dt>
-										<dd>The type of token this is, should be one of tokenType</dd>
 									
-										<dt>
-											<span class="light fixedFont">{String}</span>  <b>name</b>
-											
-										</dt>
-										<dd>The name of this token</dd>
 									
-										<dt>
-											<span class="light fixedFont">{String}</span>  <b>val</b>
-											
-										</dt>
-										<dd>The originaly matched string</dd>
+										<dt class="heading">Since:</dt>
+										<dd>v1.4.1</dd>
 									
-										<dt>
-											<span class="light fixedFont">{Array}</span>  <b>attrs</b>
-											
-										</dt>
-										<dd>Any attributes. Only set on tokenType.open tokens</dd>
 									
-										<dt>
-											<span class="light fixedFont">{Array}</span>  <b>children</b>
-											
-										</dt>
-										<dd>Any children of this token</dd>
 									
-										<dt>
-											<span class="light fixedFont">{TokenizeToken}</span>  <b>closing</b>
-											
-										</dt>
-										<dd>This tokens closing tag. Only set on tokenType.open tokens</dd>
+									
+									
+									
+									
+									
 									
 								</dl>
-							
-							
 							
 						</div>
 					</div>
@@ -268,146 +230,54 @@
 	#### FIELD DETAILS
 	-->
 			
-	<!--
-	#### METHOD DETAILS
-	-->		
-			
 				<section>
 					<div class="details props">
 						<div class="innerProps">
 							<h2 class="sectionTitle">
-								Method Detail
+								Field Detail
 							</h2>
 							
-							<ul class="methodDetail" id="MethodDetail">
+							
+								<div class="fixedFont heading" id="serialize">
+									<span class='lighter'>
+									
+									</span>
+									
+									<span class="light">{String}</span>
+									
+									<b>serialize</b>							
+								</div>
+								
+								<div class="description">
+									Serializes a node to XHTML
+									
+									
+									
+								</div>
 								
 								
-									<li 
-										 class='item0'
-									>
-										<div class="fixedFont heading" id=".clone">
-											<span class='lighter'>
-											&lt;static&gt; 
-											</span>
-											
-											<span class="light">{TokenizeToken}</span>
-											
-											<span class="light">jQuery.sceditor.BBCodeParser#TokenizeToken.</span><b>clone</b>(includeChildren)
-										</div>
+									
+									<dl class="detailList nomargin">
+									
 										
-										<div class="description">
-											Clones this token
-											
-											
-											
-											
-										</div>
+										
+											<dt class="heading">Since:</dt>
+											<dd>v1.4.1</dd>
 										
 										
 										
-										
-											<dl class="detailList params">
-												<dt class="heading">Parameters:</dt>
-												
-													<dt>
-														<span class="light fixedFont">{Bool}</span> <b>includeChildren</b>
-														
-													</dt>
-													<dd>If to include the children in the clone. Defaults to false.</dd>
-												
-											</dl>
-										
-										
-										
-											<dl class="detailList nomargin">
-											
-												
-												
-												
-												
-												
-												
-												
-													<dt class="heading">Returns:</dt>
-													
-														<dd><span class="light fixedFont">{TokenizeToken}</span> </dd>
-													
-												
-												
-												
-												
-												
-											
-											</dl>
-										
-										<div class="hr"></div>
-									</li>
+									</dl>
 								
-									<li 
-										 class='item1'
-									>
-										<div class="fixedFont heading" id=".splitAt">
-											<span class='lighter'>
-											&lt;static&gt; 
-											</span>
-											
-											<span class="light">{TokenizeToken}</span>
-											
-											<span class="light">jQuery.sceditor.BBCodeParser#TokenizeToken.</span><b>splitAt</b>(splitAt)
-										</div>
-										
-										<div class="description">
-											Splits this token at the specified child
-											
-											
-											
-											
-										</div>
-										
-										
-										
-										
-											<dl class="detailList params">
-												<dt class="heading">Parameters:</dt>
-												
-													<dt>
-														<span class="light fixedFont">{TokenizeToken|Int}</span> <b>splitAt</b>
-														
-													</dt>
-													<dd>The child to split at or the index of the child</dd>
-												
-											</dl>
-										
-										
-										
-											<dl class="detailList nomargin">
-											
-												
-												
-												
-												
-												
-												
-												
-													<dt class="heading">Returns:</dt>
-													
-														<dd><span class="light fixedFont">{TokenizeToken}</span> The right half of the split token or null if failed</dd>
-													
-												
-												
-												
-												
-												
-											
-											</dl>
-										
-										
-									</li>
 								
-							</ul>
+								
+							
 						</div>
 					</div>
 				</section>
+			
+	<!--
+	#### METHOD DETAILS
+	-->		
 			
 			
 	<!--
